@@ -18,6 +18,8 @@ class Layout extends Widget
 
 	public $footer;
 
+    public $width = '40.5rem;';
+
 	public function render()
 	{
 		return PHPTheme::view('layout', [
@@ -25,7 +27,8 @@ class Layout extends Widget
 			'title' => $this->title,
 			'background' => $this->background,
 			'subscribeForm' => $this->subscribeForm,
-			'footer' => $this->footer
+			'footer' => $this->footer,
+            'width' => $this->width
 		]);
 	}
 

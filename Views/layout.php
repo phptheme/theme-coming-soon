@@ -27,7 +27,7 @@
 <?php else:?>
 	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="<?= PHPTheme::url('mp4/bg.mp4');?>" type="video/mp4"></video>
 <?php endif;?>
-<div class="masthead">
+<div class="masthead" style="width: <?= $width;?>">
 	<div class="masthead-bg"></div>
 	<div class="container h-100">
 		<div class="row h-100">
