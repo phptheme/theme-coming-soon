@@ -19,6 +19,14 @@
 <script type="text/javascript" src="<?= PHPTheme::url('js/pjax2/jquery.pjax.js');?>"></script>
 <?php PHPTheme::trigger('page_head');?>
 </head>
+<style type="text/css">
+@media (min-width: 768px)
+{
+    .masthead {
+        width: <?= $width;?>;
+    }
+}
+</style>
 <body>
 <?php PHPTheme::trigger('page_body_begin');?>
 <div class="overlay"></div>
@@ -27,7 +35,7 @@
 <?php else:?>
 	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="<?= PHPTheme::url('mp4/bg.mp4');?>" type="video/mp4"></video>
 <?php endif;?>
-<div class="masthead" style="width: <?= $width;?>">
+<div class="masthead">
 	<div class="masthead-bg"></div>
 	<div class="container h-100">
 		<div class="row h-100">

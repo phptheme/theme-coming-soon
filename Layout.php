@@ -18,7 +18,7 @@ class Layout extends Widget
 
 	public $footer;
 
-    public $width = '40.5rem;';
+    public $width = '40.5rem';
 
 	public function render()
 	{
