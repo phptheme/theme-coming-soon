@@ -31,7 +31,7 @@
 <?php PHPTheme::trigger('page_body_begin');?>
 <div class="overlay"></div>
 <?php if($background):?>
-	<img style="min-width: 100%; position: fixed; left: 0; top: 0;" src="<?= $background;?>">
+	<img style="min-width: 100%; min-height: 100%; position: fixed; left: 0; top: 0;" src="<?= $background;?>">
 <?php else:?>
 	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="<?= PHPTheme::url('mp4/bg.mp4');?>" type="video/mp4"></video>
 <?php endif;?>
