@@ -59,7 +59,14 @@ if ($title)
 
                     if ($subscribeForm)
                     {
-                        echo $this->subscribeForm($subscribeForm);
+                        if (is_array($subscribeForm))
+                        {
+                            echo $this->subscribeForm($subscribeForm);
+                        }
+                        else
+                        {
+                            echo $subscribeForm; // pre-rendered form...
+                        }
                     }
 
                     ?>

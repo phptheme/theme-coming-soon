@@ -2,9 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-use PhpTheme\Core\Widget;
-
-class LayoutFooterButton extends Widget
+class FooterButton extends \PhpTheme\Core\Widget
 {
 
 	public $label;
@@ -21,7 +19,7 @@ class LayoutFooterButton extends Widget
 
         $options['href'] = $this->url;
 
-		return $this->render('layout-footer-button', [
+		return $this->render('footer-button', [
 			'label' => $this->label,
 			'url' => $this->url,
 			'icon' => $this->icon,

@@ -2,16 +2,14 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-use PhpTheme\Core\Widget;
-
-class LayoutFooter extends Widget
+class Footer extends \PhpTheme\Core\Widget
 {
 
 	public $buttons = [];
 
 	public function run()
 	{
-		return $this->render('layout-footer', [
+		return $this->render('footer', [
 			'buttons' => $this->buttons
 		]);
 	}

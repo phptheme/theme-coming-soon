@@ -2,9 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-use PhpTheme\Core\Widget;
-
-class Layout extends Widget
+class Layout extends \PhpTheme\Core\Widget
 {
 
 	public $content;
