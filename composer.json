@@ -4,5 +4,8 @@
         "psr-4": {
             "PHPTheme\\ComingSoonTheme\\": ""
         }
+    },
+    "require": {
+        "phptheme/core": "dev-master"
     }
 }
