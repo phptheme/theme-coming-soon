@@ -1,18 +1,17 @@
 <?php
 
-namespace PHPTheme\ComingSoonTheme;
+namespace PhpTheme\ComingSoonTheme;
 
-use PHPTheme;
-use PHPTheme\Widget;
+use PhpTheme\Core\Widget;
 
 class LayoutFooter extends Widget
 {
 
 	public $buttons = [];
 
-	public function render()
+	public function run()
 	{
-		return PHPTheme::view('layout-footer', [
+		return $this->render('layout-footer', [
 			'buttons' => $this->buttons
 		]);
 	}

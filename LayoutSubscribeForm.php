@@ -1,9 +1,8 @@
 <?php
 
-namespace PHPTheme\ComingSoonTheme;
+namespace PhpTheme\ComingSoonTheme;
 
-use PHPTheme;
-use PHPTheme\Widget;
+use PhpTheme\Core\Widget;
 
 class LayoutSubscribeForm extends Widget
 {
@@ -20,7 +19,7 @@ class LayoutSubscribeForm extends Widget
 
 	public $options = [];
 
-	public function render()
+	public function run()
 	{
 		$options = $this->options;
 
@@ -30,7 +29,7 @@ class LayoutSubscribeForm extends Widget
 
 		$options['id'] = 'subscribe-form';
 		
-		return PHPTheme::view('layout-subscribe-form', [
+		return $this->render('layout-subscribe-form', [
 			'fields' => $this->fields,
 			'errors' => $this->errors,
 			'submit' => $this->submit,

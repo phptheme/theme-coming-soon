@@ -1,9 +1,8 @@
 <?php
 
-namespace PHPTheme\ComingSoonTheme;
+namespace PhpTheme\ComingSoonTheme;
 
-use PHPTheme;
-use PHPTheme\Widget;
+use PhpTheme\Core\Widget;
 
 class Page extends Widget
 {
@@ -12,9 +11,9 @@ class Page extends Widget
 
 	public $title;
 
-	public function render()
+	public function run()
 	{
-		return PHPTheme::view('page', [
+		return $this->render('page', [
 			'content' => $this->content,
 			'title' => $this->title
 		]);

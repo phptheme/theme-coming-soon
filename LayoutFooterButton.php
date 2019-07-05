@@ -1,9 +1,8 @@
 <?php
 
-namespace PHPTheme\ComingSoonTheme;
+namespace PhpTheme\ComingSoonTheme;
 
-use PHPTheme;
-use PHPTheme\Widget;
+use PhpTheme\Core\Widget;
 
 class LayoutFooterButton extends Widget
 {
@@ -16,13 +15,13 @@ class LayoutFooterButton extends Widget
 
     public $options = [];
 
-	public function render()
+	public function run()
 	{
         $options = $this->options;
 
         $options['href'] = $this->url;
 
-		return PHPTheme::view('layout-footer-button', [
+		return $this->render('layout-footer-button', [
 			'label' => $this->label,
 			'url' => $this->url,
 			'icon' => $this->icon,

@@ -2,7 +2,7 @@
     "name": "phptheme/theme-coming-soon",
     "autoload": {
         "psr-4": {
-            "PHPTheme\\ComingSoonTheme\\": ""
+            "PhpTheme\\ComingSoonTheme\\": ""
         }
     },
     "require": {
