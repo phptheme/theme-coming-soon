@@ -10,4 +10,4 @@
 
 ## Usage
 
-(https://github.com/phptheme/theme-coming-soon-test)[github.com/phptheme/theme-coming-soon-test]
+[https://github.com/phptheme/theme-coming-soon-test](github.com/phptheme/theme-coming-soon-test)
