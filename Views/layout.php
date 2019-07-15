@@ -1,6 +1,6 @@
 <?php
 
-use PhpTheme\Core\Html;
+use PhpTheme\Helpers\Html;
 
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ use PhpTheme\Core\Html;
 
 if ($title)
 {
-    echo Html::tag('title', $this->escape($title));
+    echo Html::tag('title', Html::escape($title));
 }
 
 ?>

@@ -2,7 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-use PhpTheme\Core\Html;
+use PhpTheme\Helpers\Html;
 
 class SubscribeForm extends \PhpTheme\Core\Widget
 {

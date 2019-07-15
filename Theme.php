@@ -7,7 +7,7 @@ class Theme extends \PhpTheme\Core\Theme
     
     const LAYOUT = Layout::class;
 
-    const PAGE = Page::class;
+    const MAIN_LAYOUT = MainLayout::class;
 
     const FOOTER_BUTTON = FooterButton::class;
 
@@ -29,9 +29,9 @@ class Theme extends \PhpTheme\Core\Theme
         echo $this->endWidget($this->_layout);
     }
 
-    public function page(array $params = [])
+    public function mainLayout(array $params = [])
     {
-        return $this->widget(static::PAGE, $params);
+        return $this->widget(static::MAIN_LAYOUT, $params);
     }
 
     public function subscribeForm(array $params = [])
