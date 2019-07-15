@@ -6,7 +6,8 @@
     'lang' => $lang,
     'head' => $head,
     'beginBody' => $beginBody,
-    'endBody' => $endBody
+    'endBody' => $endBody,
+    'width' => $width
 ]);?>
 
 <?php if($title):?><h1 class="mb-3"><?= $title;?></h1><?php endif;?>
