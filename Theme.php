@@ -17,6 +17,11 @@ class Theme extends \PhpTheme\Core\Theme
 
     protected $_layout;
 
+    public function layout(array $params = [])
+    {
+        return $this->widget(static::LAYOUT, $params);
+    }
+
     public function beginLayout(array $params = [])
     {
         $this->_layout = $this->beginWidget(static::LAYOUT, $params);
