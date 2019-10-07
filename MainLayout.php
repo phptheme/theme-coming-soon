@@ -15,8 +15,6 @@ class MainLayout extends \PhpTheme\Core\Widget
 
     public $footer;
 
-    public $width = '40.5rem';
-
     public $lang = 'en';
 
     public $head;
@@ -24,6 +22,8 @@ class MainLayout extends \PhpTheme\Core\Widget
     public $beginBody;
 
     public $endBody;
+
+    public $pageTitle;
 
     public function run()
     {
@@ -33,11 +33,11 @@ class MainLayout extends \PhpTheme\Core\Widget
             'background' => $this->background,
             'subscribeForm' => $this->subscribeForm,
             'footer' => $this->footer,
-            'width' => $this->width,
             'lang' => $this->lang,
             'head' => $this->head,
             'beginBody' => $this->beginBody,
-            'endBody' => $this->endBody
+            'endBody' => $this->endBody,
+            'pageTitle' => $this->pageTitle
         ]);
     }
 

@@ -6,11 +6,10 @@
     'lang' => $lang,
     'head' => $head,
     'beginBody' => $beginBody,
-    'endBody' => $endBody,
-    'width' => $width
+    'endBody' => $endBody
 ]);?>
 
-<?php if($title):?><h1 class="mb-3"><?= $title;?></h1><?php endif;?>
+<?php if($pageTitle):?><h1 class="mb-3"><?= $pageTitle;?></h1><?php endif;?>
 
 <div class="mb-5">
 
