@@ -31,14 +31,6 @@ if ($title)
 <script type="text/javascript" src="<?= $this->baseUrl;?>/js/pjax2/jquery.pjax.js"></script>
 <?= $head;?>
 </head>
-<style type="text/css">
-@media (min-width: 768px)
-{
-    .masthead {
-        width: <?= $width;?>;
-    }
-}
-</style>
 <body>
 <?= $beginBody;?>
 <div class="overlay"></div>
