@@ -7,7 +7,7 @@ class Footer extends \PhpTheme\Core\Widget
 
 	public $buttons = [];
 
-	public function run()
+	public function toString() : string
 	{
 		return $this->render('footer', [
 			'buttons' => $this->buttons

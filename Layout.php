@@ -23,7 +23,7 @@ class Layout extends \PhpTheme\Core\Widget
 
     public $endBody;
 
-	public function run()
+	public function toString() : string
 	{
 		return $this->render('layout', [
 			'content' => $this->content,

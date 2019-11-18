@@ -25,7 +25,7 @@ class MainLayout extends \PhpTheme\Core\Widget
 
     public $pageTitle;
 
-    public function run()
+    public function toString() : string
     {
         return $this->render('main-layout', [
             'content' => $this->content,

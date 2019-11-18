@@ -2,7 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-use PhpTheme\Helpers\Html;
+use PhpTheme\Html\HtmlHelper;
 
 class SubscribeForm extends \PhpTheme\Core\Widget
 {
@@ -24,15 +24,15 @@ class SubscribeForm extends \PhpTheme\Core\Widget
         'action' => '#subscribe'
     ];
 
-	public function run()
+	public function toString() : string
 	{
 		return $this->render('subscribe-form', [
 			'submitButton' => $this->submitButton,
-			'formOptions' => Html::mergeOptions(
+			'formOptions' => HtmlHelper::mergeOptions(
                 $this->defaultFormOptions, 
                 $this->formOptions
             ),
-            'inputOptions' => Html::mergeOptions(
+            'inputOptions' => HtmlHelper::mergeOptions(
                 $this->defaultInputOptions, 
                 $this->inputOptions
             )

@@ -13,7 +13,7 @@ class FooterButton extends \PhpTheme\Core\Widget
 
     public $options = [];
 
-	public function run()
+	public function toString() : string
 	{
         $options = $this->options;
 
