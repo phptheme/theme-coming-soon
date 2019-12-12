@@ -2,7 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-class Footer extends \PhpTheme\Core\Widget
+class Footer extends \PhpTheme\Core\ThemeWidget
 {
 
 	public $buttons = [];

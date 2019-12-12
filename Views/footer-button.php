@@ -1,15 +1,5 @@
-<?php
-
-use PhpTheme\Helpers\Html;
-
-?>
-
 <li class="list-unstyled-item">
 
-<?= Html::beginTag('a', $options);?>
-
-    <i class="<?= $icon;?>"></i><?= $label;?>
-
-<?= Html::endTag('a');?>
+    <a href="<?= $url;?>"><i class="<?= $icon;?>"></i><?= $label;?></a>
 
 </li>

@@ -17,6 +17,8 @@ class Theme extends \PhpTheme\Core\Theme
 
     protected $_layout;
 
+    public $baseUrl;
+
     public function layout(array $params = [])
     {
         return $this->widget(static::LAYOUT, $params);

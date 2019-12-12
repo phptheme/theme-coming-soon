@@ -1,34 +1,22 @@
-<?php
-
-use PhpTheme\Helpers\Html;
-
-?>
 <!DOCTYPE html>
 <html lang="<?= $lang;?>">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Title Page-->
-<?php
-
-if ($title)
-{
-    echo Html::tag('title', Html::escape($title));
-}
-
-?>
+<?php if($title):?><title><?= $title;?></title><?php endif;?>
 <!-- Bootstrap core CSS -->
-<link href="<?= $this->baseUrl;?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?= $this->theme->baseUrl;?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom fonts for this template -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-<link href="<?= $this->baseUrl;?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="<?= $this->theme->baseUrl;?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 <!-- Custom styles for this template -->
-<link href="<?= $this->baseUrl;?>/css/coming-soon.min.css" rel="stylesheet">
+<link href="<?= $this->theme->baseUrl;?>/css/coming-soon.min.css" rel="stylesheet">
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="<?= $this->baseUrl;?>/vendor/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="<?= $this->baseUrl;?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="<?= $this->baseUrl;?>/js/pjax2/jquery.pjax.js"></script>
+<script type="text/javascript" src="<?= $this->theme->baseUrl;?>/vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="<?= $this->theme->baseUrl;?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="<?= $this->theme->baseUrl;?>/js/pjax2/jquery.pjax.js"></script>
 <?= $head;?>
 </head>
 <body>
@@ -37,7 +25,7 @@ if ($title)
 <?php if($background):?>
 	<img style="min-width: 100%; min-height: 100%; position: fixed; left: 0; top: 0;" src="<?= $background;?>">
 <?php else:?>
-	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="<?= $this->baseUrl;?>/mp4/bg.mp4" type="video/mp4"></video>
+	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="<?= $this->theme->baseUrl;?>/mp4/bg.mp4" type="video/mp4"></video>
 <?php endif;?>
 <div class="masthead">
 	<div class="masthead-bg"></div>
@@ -53,7 +41,7 @@ if ($title)
                     {
                         if (is_array($subscribeForm))
                         {
-                            echo $this->subscribeForm($subscribeForm);
+                            echo $this->theme->subscribeForm($subscribeForm);
                         }
                         else
                         {
@@ -71,12 +59,12 @@ if ($title)
 
 if ($footer)
 {
-    echo $this->footer($footer);
+    echo $this->theme->footer($footer);
 }
 
 ?>
 <!-- Custom scripts for this template -->
-<script src="<?= $this->baseUrl;?>/js/coming-soon.min.js"></script>
+<script src="<?= $this->theme->baseUrl;?>/js/coming-soon.min.js"></script>
 <?= $endBody;?>
 </body>
 </html>

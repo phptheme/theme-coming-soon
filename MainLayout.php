@@ -2,7 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-class MainLayout extends \PhpTheme\Core\Widget
+class MainLayout extends \PhpTheme\Core\ThemeWidget
 {
 
     public $content;
@@ -17,13 +17,13 @@ class MainLayout extends \PhpTheme\Core\Widget
 
     public $lang = 'en';
 
-    public $head;
+    public $head = '';
 
-    public $beginBody;
+    public $beginBody = '';
 
-    public $endBody;
+    public $endBody = '';
 
-    public $pageTitle;
+    public $pageTitle = '';
 
     public function toString() : string
     {

@@ -1,21 +1,15 @@
-<?php
+<form id="<?= $formId;?>" method="POST" action="<?= $formAction;?>">
 
-use PhpTheme\Helpers\Html;
+    <div class="input-group input-group-newsletter">
 
-?>
+        <input class="form-control" aria-describedby="basic-addon" name="<?= $inputName;?>">
 
-<?= Html::beginTag('form', $formOptions);?>
+    	<div class="input-group-append">
+    	
+    		<button class="btn btn-secondary" type="submit"><?= $submitButton;?></button>
+    	
+    	</div>
 
-<div class="input-group input-group-newsletter">
+    </div>
 
-    <?= Html::shortTag('input', $inputOptions);?>
-
-	<div class="input-group-append">
-	
-		<button class="btn btn-secondary" type="submit"><?= $submitButton;?></button>
-	
-	</div>
-
-</div>
-
-<?= Html::endTag('form');?>
+</form>
