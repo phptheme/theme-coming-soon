@@ -2,7 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-class FooterButton extends \PhpTheme\Core\Widget
+class FooterButton extends \PhpTheme\Core\ThemeWidget
 {
 
 	public $label;

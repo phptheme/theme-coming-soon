@@ -2,7 +2,7 @@
 
 namespace PhpTheme\ComingSoonTheme;
 
-class SubscribeForm extends \PhpTheme\Core\Widget
+class SubscribeForm extends \PhpTheme\Core\ThemeWidget
 {
 
 	public $submitButton = 'Subscribe';

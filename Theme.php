@@ -15,6 +15,8 @@ class Theme extends \PhpTheme\Core\Theme
 
     const SUBSCRIBE_FORM = SubscribeForm::class;
 
+    const PAGE = Page::class;
+
     protected $_layout;
 
     public $baseUrl;
@@ -54,6 +56,11 @@ class Theme extends \PhpTheme\Core\Theme
     public function footer(array $params = [])
     {
         return $this->widget(static::FOOTER, $params);
+    }
+
+    public function page(array $params = [])
+    {
+        return $this->widget(static::PAGE, $params);
     }
 
 }
