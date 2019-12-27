@@ -1,13 +1,4 @@
-<?php $this->theme->beginLayout([
-    'subscribeForm' => $subscribeForm,
-    'footer' => $footer,
-    'background' => $background,
-    'title' => $title,
-    'lang' => $lang,
-    'head' => $head,
-    'beginBody' => $beginBody,
-    'endBody' => $endBody
-]);?>
+<?php $this->theme->beginLayout($layout);?>
 
 <?= $content;?>
 

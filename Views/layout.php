@@ -55,14 +55,7 @@
 		</div>
 	</div>
 </div>
-<?php
-
-if ($footer)
-{
-    echo $this->theme->footer($footer);
-}
-
-?>
+<?= $socialMenu;?>    
 <!-- Custom scripts for this template -->
 <script src="<?= $this->theme->baseUrl;?>/js/coming-soon.min.js"></script>
 <?= $this->theme->endBody;?>

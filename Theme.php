@@ -9,9 +9,9 @@ class Theme extends \PhpTheme\Core\Theme
 
     const MAIN_LAYOUT = MainLayout::class;
 
-    const FOOTER_BUTTON = FooterButton::class;
+    const SOCIAL_MENU = SocialMenu::class;
 
-    const FOOTER = Footer::class;
+    const SOCIAL_MENU_ITEM = SocialMenuItem::class;
 
     const SUBSCRIBE_FORM = SubscribeForm::class;
 
@@ -48,14 +48,14 @@ class Theme extends \PhpTheme\Core\Theme
         return $this->widget(static::SUBSCRIBE_FORM, $params);
     }
 
-    public function footerButton(array $params = [])
+    public function socialMenuItem(array $params = [])
     {
-        return $this->widget(static::FOOTER_BUTTON, $params);
+        return $this->widget(static::SOCIAL_MENU_ITEM, $params);
     }
 
-    public function footer(array $params = [])
+    public function socialMenu(array $params = [])
     {
-        return $this->widget(static::FOOTER, $params);
+        return $this->widget(static::SOCIAL_MENU, $params);
     }
 
     public function page(array $params = [])
