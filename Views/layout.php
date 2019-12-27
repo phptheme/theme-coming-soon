@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= $lang;?>">
+<html lang="<?= $this->theme->lang;?>">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,10 +17,10 @@
 <script type="text/javascript" src="<?= $this->theme->baseUrl;?>/vendor/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="<?= $this->theme->baseUrl;?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="<?= $this->theme->baseUrl;?>/js/pjax2/jquery.pjax.js"></script>
-<?= $head;?>
+<?= $this->theme->head;?>
 </head>
 <body>
-<?= $beginBody;?>
+<?= $this->theme->beginBody;?>
 <div class="overlay"></div>
 <?php if($background):?>
 	<img style="min-width: 100%; min-height: 100%; position: fixed; left: 0; top: 0;" src="<?= $background;?>">
@@ -65,6 +65,6 @@ if ($footer)
 ?>
 <!-- Custom scripts for this template -->
 <script src="<?= $this->theme->baseUrl;?>/js/coming-soon.min.js"></script>
-<?= $endBody;?>
+<?= $this->theme->endBody;?>
 </body>
 </html>
