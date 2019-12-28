@@ -19,6 +19,10 @@ class MainLayout extends \PhpTheme\Core\ThemeWidget
 
     public $pageTitle;
 
+    public $copyright = 'My Company';
+
+    public $poweredBy;
+
     public function toString() : string
     {
         $layout = array_merge(
@@ -42,7 +46,9 @@ class MainLayout extends \PhpTheme\Core\ThemeWidget
             'pageTitle' => $this->pageTitle,
             'layout' => $layout,
             'background' => $this->background,
-            'socialMenu' => $socialMenu
+            'socialMenu' => $socialMenu,
+            'copyright' => strtr($this->copyright, ['{year}' => date('Y')]),
+            'poweredBy' => $this->poweredBy
         ]);
     }
 
