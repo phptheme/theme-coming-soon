@@ -9,32 +9,40 @@ class MainLayout extends \PhpTheme\Core\ThemeWidget
 
     public $layout = [];
 
-    public $socialMenu = [];
-
-    public $socialMenuOptions = [];
-
     public $background;
 
     public $title;
+
+    public $socialMenu = [];
+
+    public $socialMenuOptions = [];
 
     public $pageTitle;
 
     public function toString() : string
     {
-        $layout = $this->layout;
+        $layout = array_merge(
+            [
+                'title' => $this->title
+            ], 
+            $this->layout
+        );
 
-        $layout['socialMenu'] = $this->socialMenu;
-
-        $layout['socialMenuOptions'] = $this->socialMenuOptions;
-
-        $layout['background'] = $this->background;
-
-        $layout['title'] = $this->title;
+        $socialMenu = $this->theme->socialMenu(
+            array_merge(
+                $this->socialMenuOptions, 
+                [
+                    'items' => $this->socialMenu
+                ]
+            )
+        );
 
         return $this->render('main-layout', [
             'content' => $this->content,
             'pageTitle' => $this->pageTitle,
-            'layout' => $layout
+            'layout' => $layout,
+            'background' => $this->background,
+            'socialMenu' => $socialMenu
         ]);
     }
 
