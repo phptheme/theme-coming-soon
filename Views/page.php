@@ -2,6 +2,6 @@
 
 <div class="mb-5">
 
-<?= $content;?>
+<?= $text;?>
 
 </div>

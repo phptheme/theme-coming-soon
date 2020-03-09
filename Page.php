@@ -5,14 +5,14 @@ namespace PhpTheme\Themes\ComingSoon;
 class Page extends \PhpTheme\Core\Widget
 {
 
-    public $content;
+    public $text;
 
     public $title;
 
     public function toString() : string
     {
         return $this->render('page', [
-            'content' => $this->content,
+            'text' => $this->text,
             'title' => $this->title
         ]);
     }
