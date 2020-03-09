@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpTheme\ComingSoonTheme;
+namespace PhpTheme\Themes\ComingSoon;
 
 class Theme extends \PhpTheme\Core\Theme
 {
@@ -61,6 +61,6 @@ class Theme extends \PhpTheme\Core\Theme
     public function page(array $params = [])
     {
         return $this->widget(static::PAGE, $params);
-    }
+    }    
 
 }

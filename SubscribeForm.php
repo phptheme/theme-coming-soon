@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpTheme\ComingSoonTheme;
+namespace PhpTheme\Themes\ComingSoon;
 
-class SubscribeForm extends \PhpTheme\Core\ThemeWidget
+class SubscribeForm extends \PhpTheme\Core\Widget
 {
 
 	public $submitButton = 'Subscribe';

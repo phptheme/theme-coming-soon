@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpTheme\ComingSoonTheme;
+namespace PhpTheme\Themes\ComingSoon;
 
-class Page extends \PhpTheme\Core\ThemeWidget
+class Page extends \PhpTheme\Core\Widget
 {
 
     public $text;

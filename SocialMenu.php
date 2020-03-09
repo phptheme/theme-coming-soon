@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpTheme\ComingSoonTheme;
+namespace PhpTheme\Themes\ComingSoon;
 
-class SocialMenu extends \PhpTheme\Core\ThemeWidget
+class SocialMenu extends \PhpTheme\Core\Widget
 {
 
     public $items = [];

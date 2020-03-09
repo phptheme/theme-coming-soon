@@ -2,10 +2,10 @@
     "name": "phptheme/theme-coming-soon",
     "autoload": {
         "psr-4": {
-            "PhpTheme\\ComingSoonTheme\\": ""
+            "PhpTheme\\Themes\\ComingSoon\\": ""
         }
     },
     "require": {
-        "phptheme/core": "dev-master"
+        "phptheme/core": "*"
     }
 }

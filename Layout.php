@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpTheme\ComingSoonTheme;
+namespace PhpTheme\Themes\ComingSoon;
 
-class Layout extends \PhpTheme\Core\ThemeWidget
+class Layout extends \PhpTheme\Core\Widget
 {
 
 	public $content;

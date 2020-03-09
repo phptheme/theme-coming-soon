@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpTheme\ComingSoonTheme;
+namespace PhpTheme\Themes\ComingSoon;
 
-class SocialMenuItem extends \PhpTheme\Core\ThemeWidget
+class SocialMenuItem extends \PhpTheme\Core\Widget
 {
 
     public $label;
