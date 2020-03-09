@@ -5,11 +5,9 @@ namespace PhpTheme\Themes\ComingSoon;
 class MainLayout extends \PhpTheme\Core\Widget
 {
 
-    public $content;
-
     public $layout = [];
 
-    public $background;
+    public $backgroundImage;
 
     public $title;
 
@@ -17,38 +15,18 @@ class MainLayout extends \PhpTheme\Core\Widget
 
     public $socialMenuOptions = [];
 
-    public $pageTitle;
-
-    public $copyright = 'My Company';
-
-    public $poweredBy;
-
     public function toString() : string
     {
-        $layout = array_merge(
-            [
-                'title' => $this->title
-            ], 
-            $this->layout
-        );
+        $layout = array_merge(['title' => $this->title], $this->layout);
 
-        $socialMenu = $this->theme->socialMenu(
-            array_merge(
-                $this->socialMenuOptions, 
-                [
-                    'items' => $this->socialMenu
-                ]
-            )
-        );
+        $socialMenu = $this->theme->socialMenu(array_merge($this->socialMenuOptions, ['items' => $this->socialMenu]));
 
         return $this->render('main-layout', [
             'content' => $this->content,
-            'pageTitle' => $this->pageTitle,
             'layout' => $layout,
-            'background' => $this->background,
+            'backgroundImage' => $this->backgroundImage,
             'socialMenu' => $socialMenu,
-            'copyright' => strtr($this->copyright, ['{year}' => date('Y')]),
-            'poweredBy' => $this->poweredBy
+            'copyright' => $this->theme->getCopyright()
         ]);
     }
 

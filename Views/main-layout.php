@@ -2,9 +2,9 @@
 
 <div class="overlay"></div>
 
-<?php if($background):?>
+<?php if($backgroundImage):?>
 
-<img style="min-width: 100%; min-height: 100%; position: fixed; left: 0; top: 0;" src="<?= $background;?>">
+<img style="min-width: 100%; min-height: 100%; position: fixed; left: 0; top: 0;" src="<?= $backgroundImage;?>">
 
 <?php else:?>
 
@@ -35,8 +35,9 @@
                     <?= $content;?>
                     <div style="position: fixed; bottom: 0px; left: 0px; padding-left: 3rem;">
                         <div style="padding: 15px;">
-                            <small>Copyright © 2018-2019 <?= $copyright;?>, design by <a target="_blank" href="https://startbootstrap.com">Start Bootstrap</a></small>
-                            <?php if($poweredBy):?><br><small><?= $poweredBy;?></small><?php endif;?>    
+                            <small>
+                                <?= $copyright;?>, design by <a target="_blank" href="https://startbootstrap.com">Start Bootstrap</a>
+                            </small>    
                         </div>
                     </div>
                 </div>
